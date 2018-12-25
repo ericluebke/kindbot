@@ -1,285 +1,70 @@
-<!DOCTYPE html>
-<html>
-  <style>
-  @viewport {
-  width: device-width;
-  zoom: 1.0;
-}
-  @-ms-viewport {
-  width: device-width;
-}
-    body {
-overflow-y: scroll;
-overflow-x: hidden;
-margin: 0;
-padding: 0;
-background-image: url("https://www.dl.dropboxusercontent.com/s/f7ispr7iz2ohnfh/abstract-astro-astronomy-956999.jpg?dl=0");
-background-size: 100% 800px;
-background-attachment: fixed;
-background-repeat: no-repeat;
-/*background-position: center;*/
-}
-    .head1{
-    z-index: 99;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-    top: 260px;
-    color: white;
-    text-shadow: -3px -3px 5px black;
-    text-shadow: 0px 0px 5px black;
-    text-shadow: 3px 3px 5px black;
-    }
-    .head2{
-    z-index: 99;
-    position: absolute;
-    width: 100%;
-    padding-left: 20%;
-    text-align: left;
-    font-size: 30px;
-    top: 650px;
-    color: white;
-    }
-    .head3{
-    z-index: 99;
-    position: absolute;
-    width: 100%;
-    text-align: right;
-    right: 20%;
-    font-size: 30px;
-    top: 850px;
-    color: white;
-    }
-    .head4{
-    z-index: 99;
-    position: absolute;
-    width: 100%;
-    padding-left: 20%;
-    text-align: left;
-    font-size: 30px;
-    top: 1050px;
-    color: white;
-    }
-    .p1{
-    z-index: 99;
-    text-shadow: -3px -3px 5px black;
-    text-shadow: 3px 3px 5px black;
-    text-shadow: 0px 0px 5px black;
-    font-size: 20px;
-    position: absolute;
-    top: 320px;
-    text-align: center;
-    width: 100%;
-    color: white;
-    }
-    .p2{
-    z-index: 99;
-    position: absolute;
-    width: 400px;
-    margin: 0px;
-    padding-left: 20%;
-    text-align: left;
-    font-size: 18px;
-    top: 720px;
-    color: white;
-    }
-    .p3{
-    z-index: 99;
-    position: absolute;
-    width: 400px;
-    margin: 0px;
-    right: 20%;
-    text-align: right;
-    font-size: 18px;
-    top: 920px;
-    color: white;
-    }
-    .p4{
-    z-index: 99;
-    position: absolute;
-    width: 400px;
-    margin: 0px;
-    padding-left: 20%;
-    text-align: left;
-    font-size: 18px;
-    top: 1120px;
-    color: white;
-    }
-    .footer{
-    position: absolute;
-    background-color: #1d1e21;
-    width: 100%;
-    top: 1260px;
-    height: 40px;
-    font-size: 0px;
-    }
-    .footertext{
-    position: absolute;
-    color: lightgray;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 1250px;
-    font-size: 13px;
-    }
-.wrapped-titles{
-    }
-.body1{
-position: absolute;
-margin: 0;
-font-size: 0;
-padding: 0;
-left: 0;
-top: 0;
-z-index: 98;
-width: 100%;
-height: 150px;
-/*background-color: #18181c;*/
-background-image: linear-gradient(to top, rgba(24, 24, 28, 0), rgba(24 ,24 ,28 ,1), rgba(24 ,24 ,28 ,1), rgba(24 ,24 ,28 ,1)); /* Standard syntax (must be last) */
-    }
-.body2{
-position: absolute;
-margin: 0;
-font-size: 0;
-padding: 0;
-left: 0;
-top: 500px;
-width: 100%;
-height: 100px;
-background-image: linear-gradient(to bottom, rgba(24, 24, 28, 0), rgba(24 ,24 ,28 ,1), rgba(24 ,24 ,28 ,1));
-    }
-.body2r{
-position: absolute;
-margin: 0;
-font-size: 0;
-padding: 0;
-left: 0;
-top: 600px;
-width: 100%;
-height: 700px;
-background-color: #18181c;
-    }
-.titleImg{
-z-index: 99;
-width: 200px;
-position: absolute;
-top: 0;
-margin: 0;
-padding: 0;
-    }
-.titleImg:focus{
-outline: none;
-    }
-  </style>
-    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-  <link rel="shortcut icon" type="image/png" href="https://www.dl.dropboxusercontent.com/s/xnppyvne0gwb9os/fav.png?dl=0"/>
-  <title>Next Animations</title>
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#252e39"
-    },
-    "button": {
-      "background": "transparent",
-      "text": "#14a7d0",
-      "border": "#14a7d0"
-    }
-  },
-  "content": {
-    "message": "We use cookies to ensure your comfort and ease-of-use while browsing our website.",
-    "dismiss": "Okay"
-  }
-})});
-</script>
+/* CSS files add styling rules to your content */
 
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://www.justinaguilar.com/animations/css/animations.css">
-    <meta charset="utf-8" />
+body {
+  /*font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;*/
+  font-family: main;
+  margin: 0;
+}
+p {
+  /*font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;*/
+  margin: 0;
+}
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+@font-face { font-family: main; src: url('https://www.dl.dropboxusercontent.com/s/67boj1japzfsp6y/Dual-300.ttf?dl=0'); } 
+p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
 
-  </head>
-  <body>
-    <script>
-    function setup(){
-    }
-    function windowResized(){
-    }
-    function draw(){
-    if (window.innerWidth < 1000){
-   // document.getElementById("anim").style.visibility = "hidden";
-    document.getElementById("anim1").style.left = "70%";
-    document.getElementById("anim2").style.left = "1%";
-    document.getElementById("anim3").style.left = "70%";
-    } else {
-    document.getElementById("anim1").style.left = "1%";
-    document.getElementById("anim2").style.right = "1%";
-    document.getElementById("anim2").style.left = "";
-    document.getElementById("anim3").style.left = "1%";
-    //document.getElementById("anim").style.visibility = "visible";
-    }
-    if (window.innerWidth < 810){
-    document.getElementById("anim").style.visibility = "hidden";
-    } else {
-    document.getElementById("anim").style.visibility = "visible";
-    }
-    }
-    </script>
-    <div id="content">
-    <p class ="head1">Easily create simple animations</p>
-    <p class ="p1">Get started today</p>
-      </div>
-    <iframe width="600" height="415"
-    style = "position: absolute; left: calc(50% - 300px); top: calc(5% + 155px); border: none;">
-    </iframe>
-    <div id="anim">
-    <iframe width="200" height="200" id="anim1" style="border: none; z-index: 50; position: absolute; top: 630px;" src="https://editor.p5js.org/edlluebke@gmail.com/embed/SJkn2sRxN"></iframe>
-    <iframe width="200" height="200" id="anim2" style="border: none; z-index: 50; position: absolute; top: 830px;" src="https://editor.p5js.org/edlluebke@gmail.com/embed/HyE5Hyk-N"></iframe>
-    <iframe width="200" height="200" id="anim3" style="border: none; z-index: 50; position: absolute; top: 1030px; left: 1%;" src="https://editor.p5js.org/edlluebke@gmail.com/embed/r1klrgJWE"></iframe>
-    </div>
-    <!--<iframe width="100" height="100" id="scrollButton" style="border: none; z-index: 99; position: absolute; top: 580px; left: calc(55% - 100px);" src="https://editor.p5js.org/edlluebke@gmail.com/embed/BJ04Rg1-V"></iframe>-->
-      <script src="script.js"></script>
-    <b class ="body1">
-    yo wattup its an easter egg ayyy yo boy
-    </b>
-    <b class ="body2">
-    yo wattup its an easter egg ayyy yo boy
-    </b>
-    <p class = "head2">
-     Ideas are the only limit
-      </p>
-    <p class = "p2">
-      Our online animation editor allows for full customization of color, speed, and size. Animations can even be rendered in 2D or 3D.
-    </p>
-    <div id = "pRA">
-    <p class = "head3">
-      No coding needed
-      </p>
-    <p class = "p3">
-      Don't know JavaScript? No problem. NextAnimations makes it easy to produce stunning visuals without writing a single line of code.
-      </p>
-    </div>
-    <p class = "head4">
-    It's completely free
-    </p>
-    <p class = "p4">
-    NextAnimations is completely free to use. No watermark, no attribution, nothing.
-    </p>
-    <b class = "body2r">
-      hello my dude
-    </b>
-    <b class = "footer"> edsad</b>
-    <input type="image" class="titleImg" src="https://www.dl.dropboxusercontent.com/s/a5bbilynouvwo4e/NEXT.png?dl=0" onclick="window.location.href='index.html'">  
-     <p class = "footertext">
-      NextAnimation service designed and operated courtesy of Eric Luebke.
-    </p>
-      </body>
-</html>
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+button{
+background-color: rgba(255, 255, 255, 0.9);
+border-radius: 50%;
+width: 40px;
+font-size: 28px;
+border: none;
+}
+button:hover{
+cursor: pointer;
+transition: 0.3s;
+background-color: rgba(225, 225, 225, 0.9);
+}
+button:focus{
+outline: 0;
+}
