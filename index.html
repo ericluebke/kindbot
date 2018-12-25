@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
   <style>
   @viewport {
   width: device-width;
@@ -196,8 +198,6 @@ window.cookieconsent.initialise({
 </script>
 
   <head>
-  <!-- <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-    <link rel="shortcut icon" type="image/png" href=""/> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
@@ -207,50 +207,6 @@ window.cookieconsent.initialise({
     <meta charset="utf-8" />
 
   </head>
- <body>
-   <body onresize="windowResized()">
-   <script>  
-    var newStyles1 = document.createElement('style');
-  document.head.append(newStyles1);
-  newStyles1.innerHTML = ".headImg{ " +
-  "height: " + window.innerHeight + "px" + ";" + 
-  " }";
-  var referrer =  window.location.hostname;
-  console.log(referrer);
-  function windowResized(){
-  var newStyles1 = document.createElement('style');
-  document.head.append(newStyles1);
-  newStyles1.innerHTML = ".headImg{ " +
-  "height: " + window.innerHeight + "px" + ";" + 
-  " }";
-  console.log(newStyles1);
-  }
- // var newStyles1 = document.createElement('style');
- // document.head.append(newStyles1);
- // newStyles1.innerHTML = ".headImg{ " +
-  //"height: " + window.innerHeight + "px" + ";" + 
- // " }";
-  //var newStyles3 = document.createElement('style');
- // document.head.append(newStyles3);
- // newStyles3.innerHTML = ".headImg{ " +
- // "width: " + window.innerWidth-100 + "px" + ";" + 
-//  " }";
-  //var newStyles2 = document.createElement('style');
-  //document.head.append(newStyles2);
-  //newStyles2.innerHTML = ".header2 { " +
- // "top: " + window.innerHeight + "px" + ";" + 
-  //" }";
-  </script>
-   <input type="image" class="title" src="https://www.dl.dropboxusercontent.com/s/p1e9o1nrbt0ppxv/kindbot.png?dl=0" onclick="window.location.href='http://stackoverflow.com'">  
- <!--  <img class="headImg" src="https://www.dl.dropboxusercontent.com/s/3xdb9hpxejbnbx4/header.jpg?dl=0"> -->
-     <p class="menu">None</p> 
-       <p class="header1">Empowering users, one ♥ at a time</p>
-   <!--<p class="header2">Our Mission</p>
-   <p class="paragraph1">
-     Our mission is to provide users with trust and top-quality service and to provide companies with excellent terms for users.
-     </p> -->
-    <!--<p>Hello world</p>-->
-  </body>
   <body>
     <script>
     function setup(){
