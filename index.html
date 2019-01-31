@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#ffffff"
+    },
+    "button": {
+      "background": "#5e5e5e"
+    }
+  },
+  "theme": "edgeless",
+  "content": {
+    "message": "Hey there, I use cookies on my website.",
+    "dismiss": "Okay"
+  }
+})});
+if (screen.width <= 699){
+document.location = "https://smooth-meerkat.glitch.me/index-mobile.html";
+}
+</script>
+  <head>
+    <style>
+    @font-face { font-family: main; src: url('https://www.dl.dropboxusercontent.com/s/67boj1japzfsp6y/Dual-300.ttf?dl=0'); } 
+    body {
+    /*background-image: url("https://www.dl.dropboxusercontent.com/s/fu4mpeto02wiupe/bokeh.png?dl=0");*/
+    background-image:  url("https://www.dl.dropboxusercontent.com/s/lwwk3dku5lhln2v/f3733ed59a4b5a7edb8608d85a44f2ac.jpg?dl=0");
+      }
+    .title {
+    background: rgba(0, 0, 0, 0);
+    font-family: main;
+    z-index: 99;
+    font-size: 50px;
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 30%;
+    /*text-shadow: 0 0 80px black;*/
+    }
+    a{
+    color: black;
+      }
+    .feed {
+    font-size: 0;
+    background-color: white;
+    width: 400px;
+    position: absolute;
+    left: calc(50% - 200px);
+    height: 190px;
+    margin-bottom: 30px;
+   /* margin-top: 120px;*/
+    top: 31%;
+    box-shadow: 0px 0px 30px grey;
+      }
+    .page-menu{
+    position: absolute;
+    top: calc(30% + 100px);
+    font-family: main;
+    left: calc(50% - 123px);
+    
+      }
+    canvas {
+    padding: 0;
+    margin: 0;
+    display: block;
+      }
+    #cookieConsent{
+    z-index: 100;
+      }
+    </style>
+    <title>eric luebke</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
+   <!-- <script src="cookie-policy.js"></script> -->
+  </head>  
+  <body>
+  <script src = "script.js"></script>
+  <iframe src="https://editor.p5js.org/edlluebke@gmail.com/embed/B1BETQDe4" scrolling="no" width="1920px" height="1080px" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; overflow:hidden;"></iframe>
+  <!--<iframe src="https://editor.p5js.org/edlluebke@gmail.com/embed/SyNf7u_e4" scrolling="no" width="1920px" height="1080px" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:100; overflow:hidden;"></iframe>-->
+  
+    <p class="title">
+    eric luebke
+    </p>
+    <p class="feed">
+      Wow yolo XD RAWR
+    </p>
+    <p class="page-menu">
+      <a href="/about">about me</a> • <a href="/projects">my projects</a> • <a href="/music">my music</a>
+    </p>
+   <!-- <p class="paragraph1">
+      student programmer and musician from the USA 
+    </p>-->
+  </body>
+</html>
